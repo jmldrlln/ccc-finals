@@ -2,33 +2,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faEyeLowVision } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
+    const Links = [
+        "Home",
+        "Our Story",
+        "Our Programs",
+        "Knowledge",
+        "Events",
+        "Newsroom",
+        "Opportunities",
+        "GOVPH",
+    ]
+
     return (
         <div className="w-screen flex flex-row justify-between py-3 px-10 bg-mustard">
             <div className="flex flex-row gap-6 text-sm text-center">
-                <p className="underline-effect break-all">
-                    Home
-                </p>
-                <p className="underline-effect break-all">
-                    Our Story
-                </p>
-                <p className="underline-effect break-all">
-                    Our Programs
-                </p>
-                <p className="underline-effect break-all">
-                    Knowledge
-                </p>
-                <p className="underline-effect break-all">
-                    Events
-                </p>
-                <p className="underline-effect break-all">
-                    Newsroom
-                </p>
-                <p className="underline-effect break-all">
-                    Opportunities
-                </p>
-                <p className="underline-effect break-all">
-                    GOVPH
-                </p>
+                {
+                    Links.map(link => {
+                        return(
+                            <p className="underline-effect break-all h-full flex items-center">
+                                {link}
+                            </p>
+                        )
+                    })
+                }
             </div>
             <div className="w-1/5 flex flex-row justify-between gap-4">
                 <div className="w-full relative">

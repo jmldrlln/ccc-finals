@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{html,js}',
+    './node_modules/tw-elements/dist/js/**/*.js',
+    './index.html',
   ],
 
   theme: {
@@ -20,16 +22,27 @@ module.exports = {
         },
         'black': {
           0: '#000000',
-          300: '#fefefe',
+          300: '#fafafa',
           400: '#eeeeee',
           500: '#dfdfdf',
           600: '#aaaaaa',
           700: '#808080',
           800: '#333333',
         },
+      },
+      height: {
+        104: '26rem',
+        108: '27rem',
+        112: '28rem',
+        120: '30rem',
+        128: '32rem',
+        144: '36rem',
+        160: '40rem',
       }
     },
   },
 
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }
