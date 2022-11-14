@@ -35,20 +35,20 @@ const NewsSection = () => {
 const Headlines = ({ headlines }) => {
     return (
         <div className="w-full grid grid-cols-2 gap-4">
-            { headlines.map(report => {
+            { headlines.map(article => {
                 return (
                     <div
                         className="h-min rounded shadow-md bg-black-300 overflow-hidden
                         hover:shadow-lg duration-300 ease-in-out image-hover title-hover b-paragraph-hover cursor-pointer"
                     >
                         <img
-                            src={require("../images" + report.img)}
+                            src={require("../images" + article.img)}
                             className="w-full h-40 object-cover object-center duration-300 ease-in-out"
-                            alt={report.alt}
+                            alt={article.alt}
                         />
                         <div className="flex flex-col gap-1 p-4">
-                            <p className="text-sm text-aqua-500 duration-300 ease-in-out">{report.date}</p>
-                            <h3 className="text-xl duration-300 ease-in-out line-clamp-2">{report.title}</h3>
+                            <p className="text-sm text-aqua-500 duration-300 ease-in-out">{article.date}</p>
+                            <h3 className="text-xl duration-300 ease-in-out line-clamp-2">{article.title}</h3>
                         </div>
                     </div>
                 )
@@ -60,14 +60,14 @@ const Headlines = ({ headlines }) => {
 const News = ({ regularNews }) =>{
     return (
         <div className="w-full flex flex-col gap-4">
-            { regularNews.map(report => {
+            { regularNews.map(article => {
                 return (
                     <div 
                         className="h-min p-4 flex flex-col gap-1 rounded shadow-md bg-black-300 overflow-hidden
                         hover:shadow-lg duration-300 ease-in-out title-hover b-paragraph-hover cursor-pointer"
                     >
-                        <p className="text-sm text-aqua-500 duration-300 ease-in-out">{report.date}</p>
-                        <h3 className="text-lg duration-300 ease-in-out line-clamp-3">{report.title}</h3>
+                        <p className="text-sm text-aqua-500 duration-300 ease-in-out">{article.date}</p>
+                        <h3 className="text-lg duration-300 ease-in-out line-clamp-3">{article.title}</h3>
                     </div>
                 )
             })}

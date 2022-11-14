@@ -119,3 +119,12 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   border: 0px;
 }
+
+/* swiper js customizations */
+.swiper-button-next {
+  padding: 0px 3.5rem;
+}
+
+.swiper-button-prev {
+  padding: 0px 3.5rem;
+}
