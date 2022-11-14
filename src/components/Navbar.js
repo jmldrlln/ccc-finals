@@ -14,7 +14,7 @@ const Navbar = () => {
     ]
 
     return (
-        <div className="w-screen flex flex-row justify-between py-3 px-10 bg-mustard">
+        <div className="z-100 sticky top-0 w-screen flex flex-row justify-between py-3 px-10 bg-mustard shadow-lg">
             <div className="flex flex-row gap-6 text-sm text-center">
                 {
                     Links.map(link => {

@@ -37,6 +37,9 @@ module.exports = {
         128: '32rem',
         144: '36rem',
         160: '40rem',
+      },
+      zIndex: {
+        100: 100,
       }
     },
   },

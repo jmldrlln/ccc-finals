@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="w-screen p-16 bg-black-800 text-white">
             <div className="w-full flex flex-col">
                 <div className="w-full flex flex-row gap-20">
-                    <div className="w-fit h-32 flex flex-row gap-14">
+                    <div className="w-1/5 h-32 flex flex-row justify-between">
                         <img
                             src={sealOfTransparency}
                             alt="the philippines' seal of transparency"
@@ -65,7 +65,7 @@ const Footer = () => {
                             className="object-scale-down"
                         />
                     </div>
-                    <div className="flex flex-col gap-4 grow text-sm text-black-600">
+                    <div className="w-4/5 flex flex-col gap-4 grow text-sm text-black-600">
                         <div className="flex flex-row gap-20">
                             <ContactSection/>
                             <SocmedLinksSection socmedLinks={socmedLinks}/>

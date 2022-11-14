@@ -3,7 +3,7 @@ import NewsSection from "./NewsSection"
 
 const ContentLayout = () => {
     return (
-        <div className="w-screen my-12 px-32 flex flex-row gap-8">
+        <div className="w-screen my-16 px-32 flex flex-row gap-8">
             <div className="w-2/3">
                 <NewsSection/>
             </div>

@@ -5,7 +5,35 @@
         "blurb": "The calendar of activities for the 15th Annual Global Warming and Climate Change Consciousness Week.",
         "img": "/news/101122.jpg",
         "alt": "calendar of activities poster for the 15th annual global warming and climate change consciousness week",
-        "isHeadline": true 
+        "isHeadline": true,
+        "isBanner": false
+    },
+    {
+        "title": "ISAT-U receives GHG Inventory, CCET trainings",
+        "date": "October 20, 2022",
+        "blurb": "", 
+        "img": "",
+        "alt": "",
+        "isHeadline": false,
+        "isBanner": false
+    },
+    {
+        "title": "In lead-up to COP27: PH chosen as co-facilitator, leads discussions on global agenda for climate finance",
+        "date": "October 13, 2022",
+        "blurb": "", 
+        "img": "",
+        "alt": "",
+        "isHeadline": false,
+        "isBanner": false
+    },
+    {
+        "title": "PH PUSHES STRONGER GLOBAL AGENDA FOR CLIMATE ACTION AT PRECOP27 IN KINSHASA",
+        "date": "October, 08 2022",
+        "blurb": "The Philippines pressed anew for stronger global agenda for climate action for developing vulnerable, at-risk states at the PRECOP27 Meeting in the Democratic Republic of Congo.",
+        "img": "/news/1.jpg",
+        "alt": "people who attended the PRECOP27 Meeting in the Democratic Republic of Congo",
+        "isHeadline": true,
+        "isBanner": true
     },
     {
         "title": "CCC: PBBM’s rallying call for climate justice, climate finance for vulnerable & at-risk nations sets groundwork for principled global climate action",
@@ -13,6 +41,52 @@
         "blurb": "", 
         "img": "",
         "alt": "",
-        "isHeadline": false 
+        "isHeadline": false,
+        "isBanner": false
+    },
+    {
+        "title": "PH calls for climate equity, justice at UN Expert Forum on Climate Finance in Manila",
+        "date": "September, 09 2022",
+        "blurb": "The Philippines called for climate equity and justice through the delivery of climate finance at the opening of the Third Technical  Expert Dialogue (TED3) on Climate Finance of the United Nations Framework  Convention on Climate Change (UNFCCC) on 6 September 2022.",
+        "img": "/news/2.jpg",
+        "alt": "people who attended the Third Technical Expert Dialogue (TED3) on Climate Finance of the United Nations Convention on Climate Change (UNFCCC).",
+        "isHeadline": true,
+        "isBanner": true
+    },
+    {
+        "title": "CCC renewed commitments to gender-mainstreamed climate action, and inclusive & safe workplace",
+        "date": "September 05, 2022",
+        "blurb": "", 
+        "img": "",
+        "alt": "",
+        "isHeadline": false,
+        "isBanner": false
+    },
+    {
+        "title": "CCC participates in the “Climate Policy for 2050” learning exchange program with international climate experts",
+        "date": "July 18, 2022",
+        "blurb": "", 
+        "img": "",
+        "alt": "",
+        "isHeadline": false,
+        "isBanner": false
+    },
+    {
+        "title": "CCC: Managing Climate Risks Key to Building Resilience",
+        "date": "July 18, 2022",
+        "blurb": "", 
+        "img": "",
+        "alt": "",
+        "isHeadline": false,
+        "isBanner": false
+    },
+    {
+        "title": "CCC, DOTr, transport groups vow to accelerate transition to low-carbon and sustainable transport sector",
+        "date": "September, 09 2022",
+        "blurb": "The Climate Change Commission (CCC), the Department of Transportation (DOTr), and various transport groups vowed to accelerate the transportation sector’s transition towards low-carbon and sustainable development in pursuit of the country’s commitments under the Nationally Determined Contributions (NDC).",
+        "img": "/news/3.jpg",
+        "alt": "members of the Climate Change Comission (CCC), the Department of Transportation (DOTr), and various transport groups. ",
+        "isHeadline": true,
+        "isBanner": true
     }
 ]

@@ -117,7 +117,7 @@ const InitiativesSection = () => {
                                                 </p>
                                             </div>
                                             <button
-                                                className="self-end px-4 py-1 bg-aqua-500 text-white rounded-full
+                                                className="self-end px-4 py-1 bg-aqua-500 text-white rounded-full font-bold
                                                 hover:bg-aqua-600 active:bg-aqua-500 duration-300 ease-in-out cursor-pointer"
                                             >
                                                 Learn More

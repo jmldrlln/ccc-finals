@@ -8,7 +8,7 @@ import news from "../data/news.json"
 
 const SiteCarousel = () => {
     const [ headlines ] = useState(
-        news.filter(news => news.isHeadline)
+        news.filter(news => news.isBanner)
     )
 
     return (
@@ -18,8 +18,12 @@ const SiteCarousel = () => {
             "--swiper-navigation-color": "white",
             "--swiper-navigation-size": "25px",
         }}
-        spaceBetween={30}
+        spaceBetween={0}
         centeredSlides={true}
+        slidesPerView={1}
+        slidesPerGroup={1}
+        loop={true}
+        loopFillGroupWithBlank={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
