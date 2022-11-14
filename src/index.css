@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .line-clamp-3 {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
@@ -121,10 +121,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* swiper js customizations */
-.swiper-button-next {
-  padding: 0px 3.5rem;
+.main-carousel .swiper-button-next {
+  right: 3rem;
 }
 
-.swiper-button-prev {
-  padding: 0px 3.5rem;
+.main-carousel .swiper-button-prev {
+  left: 3rem;
+}
+
+.initiatives-carousel .swiper-button-next {
+  right: 0;
+}
+
+.initiatives-carousel .swiper-button-prev {
+  left: 0;
 }

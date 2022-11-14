@@ -86,7 +86,7 @@ const InitiativesSection = () => {
                     loopFillGroupWithBlank={true}
                     navigation={true}
                     modules={[Navigation]}
-                    className="mySwiper"
+                    className="initiatives-carousel"
                 >
                     { initiatives.map(initiative => {
                         return (

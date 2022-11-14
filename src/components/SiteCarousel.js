@@ -26,6 +26,7 @@ const SiteCarousel = () => {
         }}
         navigation={true}
         modules={[Autoplay, Navigation]}
+        className="main-carousel"
       >
         {/* Carousel slides */}
         { headlines.map(article => {
@@ -33,7 +34,7 @@ const SiteCarousel = () => {
                 <SwiperSlide className="h-112 text-white">
                     <div className="absolute w-full h-full bg-black-0/50"></div>
                     <div className="absolute w-3/5 h-full px-28 flex flex-col gap-4 justify-center">
-                        <h1 className="text-3xl">{article.title}</h1>
+                        <h1 className="text-3xl line-clamp-3">{article.title}</h1>
                         <p className="text-lg">{article.blurb}</p>
                     </div>
                     <img
