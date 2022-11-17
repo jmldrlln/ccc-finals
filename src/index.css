@@ -122,11 +122,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* swiper js customizations */
 .main-carousel .swiper-button-next {
-  right: 3rem;
+right: 1.5rem;
 }
 
 .main-carousel .swiper-button-prev {
-  left: 3rem;
+left: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-carousel .swiper-button-next {
+    right: 3rem;
+  }
+
+  .main-carousel .swiper-button-prev {
+    left: 3rem;
+  }
 }
 
 .initiatives-carousel .swiper-button-next {

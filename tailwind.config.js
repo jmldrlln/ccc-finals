@@ -6,6 +6,18 @@ module.exports = {
   ],
 
   theme: {
+    screens: {
+      '2xl': '2560px',
+      'xl': '1920px',
+      'desktop': '1280px',
+      'lg': '1024px',
+      'tablet': '768px',
+      'md': '601px',
+      'sm': '414px',
+      'mobile': '375px',
+      'xs': '320px',
+    },
+
     extend: {
       colors: {
         'mustard': '#f6b104',
@@ -35,7 +47,10 @@ module.exports = {
         112: '28rem',
         120: '30rem',
         128: '32rem',
+        132: '33rem',
+        140: '35rem',
         144: '36rem',
+        152: '38rem',
         160: '40rem',
       },
       zIndex: {

@@ -28,12 +28,12 @@ const LandingFeature = () => {
     return (
         <>
         <div className="z-50 absolute w-screen -mt-20">
-            <div className="w-full flex flex-row gap-8 place-content-center px-8">
+            <div className="w-full flex flex-row gap-2 md:gap-4 desktop:gap-8 place-content-center px-6 lg:px-12 desktop:px-8">
                 {   features.map((feature, index) => {
                     return (
                         <div
-                            className="w-1/4 h-56 flex flex-col gap-2 justify-center items-center bg-black-300 rounded shadow-lg
-                            hover:bg-aqua-500 active:bg-aqua-600 hover:text-white duration-300 ease-in-out w-paragraph-hover cursor-pointer"
+                            className="w-1/3 lg:w-1/4 2xl:w-1/5 h-32 md:h-40 lg:h-56 xl:h-64 2xl:h-72 flex flex-col gap-2 justify-center items-center bg-black-300 text-center
+                            rounded shadow-lg hover:bg-aqua-500 active:bg-aqua-600 hover:text-white duration-300 ease-in-out w-paragraph-hover cursor-pointer"
                             onMouseOver={e => (e.currentTarget.firstChild.src = feature.imgHover)}
                             onMouseLeave={e => (e.currentTarget.firstChild.src = feature.img)}
                         >
@@ -43,10 +43,10 @@ const LandingFeature = () => {
                                 alt={feature.alt}
                                 className="w-1/4"
                             />
-                        <h3 className="text-xl">
+                        <h3 className="text-base lg:text-xl px-2">
                             {feature.title}
                         </h3>
-                        <p className="text-sm text-black-700 italic whitespace-pre-line duration-300 ease-in-out">
+                        <p className="hidden md:inline text-xs lg:text-sm text-black-700 italic whitespace-pre-line duration-300 ease-in-out">
                             {/* {feature.description} */}
                             Learn more
                         </p>
@@ -55,7 +55,7 @@ const LandingFeature = () => {
                 })}
             </div>
         </div>
-        <div className="bg-black-400 h-52"></div>
+        <div className="bg-black-400 h-20 md:h-32 lg:h-52 xl:h-60 2xl:h-72"></div>
         </>
     )
 }

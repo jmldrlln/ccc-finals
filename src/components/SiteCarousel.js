@@ -35,11 +35,13 @@ const SiteCarousel = () => {
         {/* Carousel slides */}
         { headlines.map(article => {
             return (                 
-                <SwiperSlide className="h-112 text-white">
+                <SwiperSlide className="h-72 lg:h-112 xl:h-144 2xl:h-160 text-white">
                     <div className="absolute w-full h-full bg-black-0/50"></div>
-                    <div className="absolute w-3/5 h-full px-28 flex flex-col gap-4 justify-center">
-                        <h1 className="text-3xl line-clamp-3">{article.title}</h1>
-                        <p className="text-lg">{article.blurb}</p>
+                    <div
+                        className="absolute left-16 md:left-20 lg:left-24 desktop:left-32 h-full w-3/4 desktop:w-2/3 xl:w-1/2
+                        flex flex-col gap-2 lg:gap-4 justify-center">
+                        <h1 className="text-xl lg:text-3xl">{article.title}</h1>
+                        <p className="hidden lg:inline-block text-base">{article.blurb}</p>
                     </div>
                     <img
                         src={require("../images" + article.img)}

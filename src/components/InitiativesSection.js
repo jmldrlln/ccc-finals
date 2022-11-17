@@ -69,8 +69,8 @@ const InitiativesSection = () => {
     ])
 
     return (
-        <div className="w-screen px-32 bg-aqua-500 py-16 text-white">
-            <h1 className="text-3xl text-center mb-8">Our Initiatives</h1>
+        <div className="w-screen px-2 mobile:px-8 md:px-20 desktop:px-32 bg-aqua-500 py-6 mobile:py-10 lg:py-16 text-white">
+            <h1 className="text-2xl lg:text-3xl text-center mb-4 lg:mb-8">Our Initiatives</h1>
             <div className="w-full">
                 <Swiper
                     style={{
@@ -78,15 +78,23 @@ const InitiativesSection = () => {
                         "--swiper-navigation-color": "white",
                         "--swiper-navigation-size": "25px",
                     }}
-                    slidesPerView={3}
+                    breakpoints={{
+                        601: { // when window width is =< 601px
+                            spaceBetween: 0,
+                            slidesPerView: 1,
+                        },
+                        1024: { // when window width is >= 1024px
+                            spaceBetween: 0,
+                            slidesPerView: 3,
+                        },
+                    }}
                     centeredSlides={true}
-                    spaceBetween={50}
                     slidesPerGroup={1}
                     loop={true}
                     loopFillGroupWithBlank={true}
                     navigation={true}
                     modules={[Navigation]}
-                    className="initiatives-carousel"
+                    className="initiatives-carousel w-full xl:w-9/12 2xl:w-2/3"
                 >
                     { initiatives.map(initiative => {
                         return (
@@ -100,7 +108,7 @@ const InitiativesSection = () => {
                                 {({isActive}) => (
                                     <div
                                         className={`flex flex-col h-120 bg-black-400 rounded overflow-hidden shadow-lg duration-300 ease-in-out text-black-500
-                                        ${isActive ? "w-full cursor-pointer" : "w-4/5 opacity-30 pointer-events-none"}`}
+                                        ${isActive ? "w-5/6 mobile:w-3/4 lg:w-full cursor-pointer" : "w-4/5 opacity-30 pointer-events-none"}`}
                                     >  
                                         <div className="w-full px-12 py-6 flex justify-center bg-white rounded shadow-md">
                                             <img
@@ -111,13 +119,13 @@ const InitiativesSection = () => {
                                         </div>
                                         <div className="grow flex flex-col justify-between p-8">
                                             <div className="flex flex-col gap-2">
-                                                <h1 className="text-sm text-aqua-500">{initiative.title}</h1>
-                                                <p className={`text-black-800 ${isActive ? "text-base" : "text-sm"}`}>
+                                                <h1 className="text-xs lg:text-sm text-aqua-500">{initiative.title}</h1>
+                                                <p className={`text-black-800 ${isActive ? "text-sm lg:text-base" : "text-sm"}`}>
                                                     {initiative.description}
                                                 </p>
                                             </div>
                                             <button
-                                                className="self-end px-4 py-1 bg-aqua-500 text-white rounded-full font-bold
+                                                className="self-end px-4 py-1 bg-aqua-500 text-white rounded-full font-bold text-sm lg:text-base
                                                 hover:bg-aqua-600 active:bg-aqua-500 duration-300 ease-in-out cursor-pointer"
                                             >
                                                 Learn More
