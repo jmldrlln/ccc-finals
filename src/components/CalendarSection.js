@@ -2,7 +2,7 @@ import events from "../data/events.json"
 
 const CalendarSection = () => {
     return (
-        <div className="h-152 mobile:h-140 md:h-132 lg:h-140 w-full">
+        <div className="h-auto md:h-132 lg:h-140 w-full">
             <div className="w-full mb-4 lg:mb-6 flex flex-row justify-between">
                 <h1 className="text-xl lg:text-2xl">Calendar of Events</h1>
                 <p className="text-sm lg:text-base text-aqua-500 hover:text-aqua-600 active:text-aqua-500 cursor-pointer self-center">
