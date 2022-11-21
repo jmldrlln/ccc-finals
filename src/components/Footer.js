@@ -50,7 +50,7 @@ const Footer = () => {
     ])
     
     return (
-        <div className="w-screen px-6 md:px-12 desktop:px-16 2xl:px-72 py-10 md:py-16 bg-black-800 text-white break-all md:break-normal">
+        <div className="w-screen px-6 md:px-12 desktop:px-16 2xl:px-72 py-10 md:py-16 bg-black-800 text-white break-normal">
             <div className="w-full flex flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8 desktop:gap-20">
                 {/* Logos */}
                 <div
@@ -97,7 +97,7 @@ const ContactSection = () => {
             </div>
             <p className="text-sm lg:text-base font-bold"> Email: 
                 <span
-                    className="pl-1 font-medium text-aqua-500 hover:text-aqua-600
+                    className="inline-block pl-0 sm:pl-1 font-medium text-aqua-500 hover:text-aqua-600
                     active:text-aqua-500 duration-300 ease-in-out cursor-pointer"
                 >
                     info@climate.gov.ph
@@ -165,9 +165,9 @@ const GovSection = () => {
     return (
         <div className="flex flex-col gap-0 lg:gap-2 text-center lg:text-left">
             <div className="flex flex-row justify-center lg:justify-start gap-2 lg:gap-4 text-base text-white">
-                <h1 className="text-sm lg:text-base">Republic of the Philippines</h1>
-                <h1 className="text-sm lg:text-base">|</h1>
-                <h1 className="text-sm lg:text-base">GOV.PH</h1>
+                <h1 className="text-xs xs:text-sm lg:text-base">Republic of the Philippines</h1>
+                <h1 className="text-xs xs:text-sm lg:text-base">|</h1>
+                <h1 className="text-xs xs:text-sm lg:text-base">GOV.PH</h1>
             </div>
             <p className="text-sm lg:text-base">All content is in the public domain unless otherwise stated.</p>
         </div>

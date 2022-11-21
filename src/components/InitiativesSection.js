@@ -51,7 +51,7 @@ const InitiativesSection = () => {
         {
             img: require("../images/initiatives/niccdies.jpg"),
             title: "National Integrated Climate Change Database Information and Exchange System",
-            description: "To track the actions necessary to address these climate change issues, the National Integrated Climate Change Database Information and Exchange System (NICCDIES) serves as the integrated climate information portal of the CCC.",
+            description: "To track the actions necessary to address these climate change issues, NICCDIES serves as the integrated climate information portal of the CCC.",
             alt: "logo of the national integrated climate change database information and exchange system",
         },
         {
@@ -107,26 +107,26 @@ const InitiativesSection = () => {
                             >
                                 {({isActive}) => (
                                     <div
-                                        className={`flex flex-col h-120 bg-black-400 rounded overflow-hidden shadow-lg duration-300 ease-in-out text-black-500
+                                        className={`flex flex-col h-112 sm:h-120 bg-black-400 rounded overflow-hidden shadow-lg duration-300 ease-in-out text-black-500
                                         ${isActive ? "w-5/6 mobile:w-3/4 lg:w-full cursor-pointer" : "w-4/5 opacity-30 pointer-events-none"}`}
                                     >  
                                         <div className="w-full px-12 py-6 flex justify-center bg-white rounded shadow-md">
                                             <img
                                                 src={initiative.img}
                                                 alt={initiative.alt}
-                                                className={`object-scale-down object-center ${isActive ? "h-32" : "h-24"}`}
+                                                className={`object-scale-down object-center ${isActive ? "h-24 desktop:h-32" : "h-16 desktop:h-24"}`}
                                             />
                                         </div>
-                                        <div className="grow flex flex-col justify-between p-8">
-                                            <div className="flex flex-col gap-2">
+                                        <div className="grow flex flex-col justify-between py-4 xs:py-6 sm:py-8 lg:py-6 xl:py-8 px-6 md:px-8">
+                                            <div className="flex flex-col gap-1 sm:gap-2">
                                                 <h1 className="text-xs lg:text-sm text-aqua-500">{initiative.title}</h1>
                                                 <p className={`text-black-800 ${isActive ? "text-sm lg:text-base" : "text-sm"}`}>
                                                     {initiative.description}
                                                 </p>
                                             </div>
                                             <button
-                                                className="self-end px-4 py-1 bg-aqua-500 text-white rounded-full font-bold text-sm lg:text-base
-                                                hover:bg-aqua-600 active:bg-aqua-500 duration-300 ease-in-out cursor-pointer"
+                                                className="self-end px-2 py-0.5 sm:px-4 sm:py-1 bg-aqua-500 text-white rounded-full
+                                                font-bold text-sm lg:text-base hover:bg-aqua-600 active:bg-aqua-500 duration-300 ease-in-out cursor-pointer"
                                             >
                                                 Learn More
                                             </button>
